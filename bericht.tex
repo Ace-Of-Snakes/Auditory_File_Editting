@@ -1,0 +1,83 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage[top=2cm, bottom=2cm, left = 2cm, right = 2cm]{geometry} 
+\geometry{a4paper} 
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[ngerman]{babel}
+\usepackage{microtype}
+
+
+\usepackage{graphicx} 
+\usepackage{amsmath,amssymb}  
+\usepackage{bm}  
+\usepackage[pdftex,bookmarks,hidelinks,breaklinks]{hyperref}  
+
+\title{Kurzvortrag pandas}
+\author{Franko Jolic, Janne Buhr}
+%\date{}
+
+\begin{document}
+\AddToHook{cmd/section/before}{\clearpage}
+\begin{titlepage}
+    \maketitle
+    \tableofcontents
+    \vfill
+\end{titlepage}
+
+\section{Timeline}
+
+2008: Development of pandas started\\
+2009: pandas becomes open source\\
+2012: First edition of Python for Data Analysis is published\\
+2015: pandas becomes a NumFOCUS sponsored project\\
+2018: First in-person core developer sprint\\
+
+\section{Library Highlights}
+
+\begin{itemize}
+\item A fast and efficient DataFrame object for data manipulation with integrated indexing
+
+\item Tools for reading and writing data between in-memory data structures and different formats: CSV and text files, Microsoft Excel, SQL databases, and the fast HDF5 format
+
+\item Intelligent data alignment and integrated handling of missing data: gain automatic label-based alignment in computations and easily manipulate messy data into an orderly form
+
+\item Flexible reshaping and pivoting of data sets
+
+\item Intelligent label-based slicing, fancy indexing, and subsetting of large data sets
+
+\item Columns can be inserted and deleted from data structures for size mutability
+
+\item Aggregating or transforming data with a powerful group by engine allowing split-apply-combine operations on data sets
+
+\item High performance merging and joining of data sets
+
+\item Hierarchical axis indexing provides an intuitive way of working with high-dimensional data in a lower-dimensional data structure
+
+\item Time series-functionality: date range generation and frequency conversion, moving window statistics, date shifting and lagging. Even create domain-specific time offsets and join time series without losing data
+
+\item Highly optimized for performance, with critical code paths written in Cython or C
+
+\item Python with pandas is in use in a wide variety of academic and commercial domains, including Finance, Neuroscience, Economics, Statistics, Advertising, Web Analytics, and more
+\end{itemize}
+
+\section{Mission}
+
+pandas aims to be the fundamental high-level building block for doing practical, real world data analysis in Python. Additionally, it has the broader goal of becoming the most powerful and flexible open source data analysis / manipulation tool available in any language.
+
+\section{Vision}
+
+A world where data analytics and manipulation software is:
+
+\begin{itemize}
+\item Accessible to everyone
+\item Free for users to use and modify
+\item Flexible
+\item Powerful
+\item Easy to use
+\item Fast
+\end{itemize}
+
+
+\end{document}
