@@ -89,4 +89,4 @@ if __name__ == "__main__":
     df = append(df)
     df = calculate(df)
     plot_bestand()
-    df.to_csv("otuput.csv", sep=";", encoding="utf-8", index=False)
+    df.to_csv("output.csv", sep=";", encoding="utf-8", index=False)
