@@ -21,9 +21,8 @@ def plot_bestand():
     plt.show()
 
 def append(df):
-    for i in range(len(df)):
-        df.loc[i,"Amazon-Preis"] = 50
-        df.loc[i,"Ebay-Preis"] = 50
+    df.loc[:,"Amazon-Preis"] = 50
+    df.loc[:,"Ebay-Preis"] = 50
     return df
 
 def clean(df):
